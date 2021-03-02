@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}RealCottages{% unless page.title %} · {{site.data.site.seo.tagline}} · {{site.data.site.location.locality}}, {{site.data.site.location.country}}{% endunless %}</title>
+  <meta name="description" content="{{page.desc}}">
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet">
+  <script>
+    (function(w, d, s, r, n) {
+    w.TrustpilotObject = n; w[n] = w[n] || function() { (w[n].q = w[n].q || []).push(arguments) };
+      a = d.createElement(s); a.async = 1; a.src = r; a.type = 'text/java' + s; f = d.getElementsByTagName(s)[0];
+      f.parentNode.insertBefore(a, f)
+    })(window, document, 'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+    tp('register', 'NUKX2z2kDXMsoKNN');
+  </script>
+</head>
+<body>
+
+  {% include patterns/masthead/masthead.html %}
+
+  {{content}}
+
+  {% include patterns/footer/footer.html %}
+  {% include metadata/real-estate-agent.html %}
+
+  <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+      const trustpilot_invitation = {
+           recipientEmail: '303030@dxperts.com',
+           recipientName: 'Edgar Smith',
+           referenceId: 'Order_123',
+           source: 'InvitationScript',
+        };
+        tp('createInvitation', trustpilot_invitation);
+    });
+  </script>
+</body>
+</html>
