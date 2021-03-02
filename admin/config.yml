@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: edgarbrignoni/jekyll-netlify-cms
+  repo: edgarbrignoni/real-cottages
   branch: main
 
 media_folder: "images/uploads"
