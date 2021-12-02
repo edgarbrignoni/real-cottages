@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-ca">
+
 <head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W9T9H3G');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}} · {% endif %}RealCottages{% unless page.title %} · {{site.data.site.seo.tagline}} · {{site.data.site.location.locality}}, {{site.data.site.location.country}}{% endunless %}</title>
@@ -8,7 +21,11 @@
   <link href="/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet">
 </head>
+
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9T9H3G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   {% include patterns/masthead/masthead.html %}
 
@@ -18,4 +35,5 @@
   {% include metadata/real-estate-agent.html %}
 
 </body>
+
 </html>
